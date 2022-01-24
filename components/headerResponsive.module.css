@@ -1,0 +1,268 @@
+.stylesH{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 1.2rem;
+    z-index: 99;
+}
+
+.stylesHDark{
+    background-color: #1a1a1a;
+    color: #e8e8e8;
+
+    transition: background-color 1s ease-out;
+}
+.stylesHDark *{
+    color: #e8e8e8;
+
+    transition: color 1.5s ease-out;
+}
+.stylesHLight *{
+    color: #1a1a1a;
+
+    transition: color 1.5s ease-out;
+}
+
+.stylesHLight{
+    background-color: #e8e8e8;
+    color: #1a1a1a;
+
+    transition: background-color 1s ease-out;
+}
+
+.stylesHDark .iconWrapp b{
+    text-shadow: -1px -1px 1px #1a1a1a, 
+    1px 1px 1px #1a1a1a,
+    -1px 1px 1px #1a1a1a,
+    1px -1px 1px #1a1a1a;
+}
+
+.navWrapp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 .8rem 0 1.2rem;
+    flex-grow: 1;
+}
+
+.iconWrapp{
+    position: relative;
+    width: 0;
+    min-width: 100%;
+}
+
+.icon{
+    position: absolute;
+    bottom: -6px;
+    left: -25px;
+    z-index: 5;
+}
+
+.iconWrapp b{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+    font-size: calc(1.1rem + .6vw);
+}
+
+.listContent{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: -100%;
+    top: 90px;
+    height: calc(100vh - 90px);
+    list-style: none;
+
+    transition: background-color 1s ease-out;
+    transition: left .5s ease-out;
+}
+
+.menuDeploy{
+    left: 0;
+    padding: 0;
+
+    transition: left .5s ease-out;
+}
+
+.menuDark{
+    background-color: #1a1a1a;
+    color: #e8e8e8;
+}
+.menuLight{
+    background-color: #e8e8e8;
+    color: #1a1a1a;
+}
+
+.listItem{
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 1.2rem 0;
+}
+
+
+.listItem a {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 200;
+}
+
+.btnContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuIcon, .menuIconBtn{
+    position: relative;
+    display: inline-block;
+    padding: 0 .5rem;
+}
+
+.menuIcon input{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    bottom: 0;
+    right: 0;
+}
+
+.menuIcon span{
+    transform: rotateZ(0deg);
+
+    transition: transform .6s ease-out;
+}
+
+.menuIcon input:checked + span{
+    transform: rotateZ(360deg);
+
+    transition: transform .6s ease-out;
+}
+
+.toggleBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+    background-color: transparent;
+    outline: none;
+}
+
+.toggleBtn:hover{
+    transform: scale(1.1);
+}
+
+.listItem::before{
+    content: none;        
+    transition: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .h2:hover{
+        transform: scale(1);
+        animation: scaleH2 1s infinite alternate;
+    }
+    
+    @keyframes scaleH2 {
+        from{
+            -webkit-font-smoothing: subpixel-antialiased;  
+            transform: scale(1);
+        }        
+        to{
+            -webkit-font-smoothing: subpixel-antialiased;
+            transform: scale(1.05);
+        }
+    }
+    .listCont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuIcon{
+        display: none;
+    }
+
+    .menu{
+        position: static;
+        flex-direction: row;
+        width: fit-content;
+        top: 0px;
+        height: auto;
+        background-color: transparent;
+    }
+ 
+    .menu li:last-child::after{
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 150%;
+        top: -20% ;
+        left: calc(100% + 1rem);
+        background-color: #1a1a1a;
+        border-radius: 2px;
+    }
+
+    .listItem{
+        position: relative;
+        margin: 0 1rem;
+    }
+
+    .listItem::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #1a1a1a;
+        
+        transition: width .4s ease-out;
+    }
+
+    .menuDark .listItem::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #e8e8e8;
+        
+        transition: width .4s ease-out;
+    }
+    
+    
+    .listItem:hover::before{
+        width: 100%;
+    }
+
+    .menuIconBtn{
+        position: relative;
+        display: inline-block;
+        padding: 0 calc(1rem + 3px);
+    }
+}
