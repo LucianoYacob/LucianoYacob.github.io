@@ -1,5 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 
+const prefix = "/";
+
 const Carrousel = ({children}) => {
     const carrousel = useRef(null);
 
