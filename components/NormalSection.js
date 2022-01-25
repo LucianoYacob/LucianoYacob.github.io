@@ -39,7 +39,7 @@ const NormalSection = ({children, theme, paintBlack, renderBox = false}) => {
                     height: auto;
                     line-height: 1.6em;
                     word-spacing: 1px;
-                    letter-spacing: 10px
+                    letter-spacing: 10px;
                     
                     transition: color 1s ease-out; 
                     color: ${paintBlack !== undefined ? "#e8e8e8" : color};
