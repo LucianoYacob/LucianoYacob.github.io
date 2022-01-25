@@ -37,21 +37,21 @@ const CV= ({theme, setTheme}) => {
                 <li className={styles.li}>Varios cursos completados en Udemy sobre desarrollo de videojuegos y C#.
                     <ul>
                         <li className={styles.li}>
-                            <Link href={prefix+"/images/csharp.jpg"}>
+                            <Link href={prefix+"/Images/csharp.jpg"}>
                                 <a className={styles.a} target="_blank">
                                     C# y Unity
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.li}>
-                            <Link href={prefix+"/images/Unity2019.jpg"}>
+                            <Link href={prefix+"/Images/Unity2019.jpg"}>
                                 <a className={styles.a} target="_blank">
                                     Unity 2019
                                 </a>
                             </Link>
                         </li>
                         <li className={styles.li}>
-                            <Link href={prefix+"/images/Unity2020.jpg"}>
+                            <Link href={prefix+"/Images/Unity2020.jpg"}>
                                 <a className={styles.a} target="_blank">
                                     Unity 2020
                                 </a>
