@@ -5,7 +5,7 @@ import PersonalizedPresentation from "../components/PersonalizedPresentation";
 import styles from "../components/listStyles.module.css";
 import helpPrintScreen from "../helpers/helpPrintScreen";
 
-const prefix = "/";
+const prefix = "";
 
 const CV= ({theme, setTheme}) => {
     return(

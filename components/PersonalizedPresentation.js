@@ -1,7 +1,7 @@
 import styles from "./presentation.module.css";
 import BoxZone from "./BoxZone";
 
-const prefix = '/';
+const prefix = '';
 
 const PersonalizedPresentation = ({showBox}) => {
     return (

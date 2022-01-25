@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import NormalSection from "../components/NormalSection";
 import PersonalizedPresentation from "../components/PersonalizedPresentation";
 
-const prefix = '/';
+const prefix = '';
 
 const Proyects = ({theme, setTheme}) => (
     <Layout theme={theme} setTheme={setTheme}>

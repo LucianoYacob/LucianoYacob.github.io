@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./headerResponsive.module.css";
 import useWindowSize from "../hooks/useWindowSize"
 
-const prefix = '/';
+const prefix = '';
 
 const HeaderResponsive = ({theme, setTheme}) => {
     const [isDeployed, setIsDeployed] = useState(false);
