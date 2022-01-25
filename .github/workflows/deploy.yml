@@ -22,6 +22,9 @@ jobs:
       with:
        node-version: ${{ matrix.node-version }}
       
+    - name: Set Actions Allow Unsecure Commands
+      run: |
+        echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
 
     - name: Installing my packages
       run: npm ci
