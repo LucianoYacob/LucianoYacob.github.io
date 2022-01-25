@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "./headerResponsive.module.css";
 import useWindowSize from "../hooks/useWindowSize"
 
+const prefix = '/';
+
 const HeaderResponsive = ({theme, setTheme}) => {
     const [isDeployed, setIsDeployed] = useState(false);
     const width = useWindowSize();
@@ -36,7 +38,7 @@ const HeaderResponsive = ({theme, setTheme}) => {
                 <Link href="/">
                     <a className={styles.iconWrapp}>
                         <div className={styles.icon}>
-                            <img src="/favicon.png" alt="icon" height="45" width="45"/>
+                            <img src={prefix + "/favicon.png"} alt="icon" height="45" width="45"/>
                         </div>
                         <b>LucianoYacob</b>
                     </a>
