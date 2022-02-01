@@ -17,7 +17,7 @@ const Index = ({theme, setTheme}) =>{
         <NormalSection theme={theme} paintBlack="#1a1a1a"> 
             <h2>Mi Planes a Futuro</h2>
             <p>Como dije anteriormente en marzo de 2022 comienzo a cursar la Licenciatura en Sistemas de Información en la Universidad Nacional de Lujan, simultáneamente a la licenciatura estaré haciendo el programa &quot;Argentina Programa&quot;, el cual me servirá para reforzar y aprender nuevos conceptos. Aclarando esto cabe resaltar que por ahora solo me desenvuelvo en el desarrollo Front-end de una aplicación, pero quiero dedicar una gran parte de mi tiempo a aprender tecnologías Back-end como php, nodeJS y bases de datos, así podre desenvolverme con total tranquilidad a través de todo lo que conlleva crear una app, convirtiéndome así en un desarrollador más capaz de crear todo tipo de soluciones para cualquier problema.</p>
-            <p>Ademas de continuar aprendiendo, tengo metas a largo plazo, por ejemplo, me encantaría reforzar conocimientos en C# y Unity para algún día crear un videojuego con una historia y mecánicas inmersivas, atrapantes e innovadoras. </p>
+            <p>Ademas de continuar aprendiendo, tengo metas a largo plazo, por ejemplo, me encantaría reforzar conocimientos en C# y Unity. </p>
             <p>También quiero generar la experiencia necesaria en un empleo con un equipo de trabajo para algún día dedicarme al dearrollo web de manera independiente.</p>
         </NormalSection>
     </Layout>
